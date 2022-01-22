@@ -6,8 +6,8 @@ router.route('/').get(getAllTasks)
                  .post(createTask)
 
 router.route('/:id').get(getTask)
-                    .get(deleteTask)
-                    .get(updateTask)
+                    .delete(deleteTask)
+                    .patch(updateTask)
 
 
 module.exports= router
